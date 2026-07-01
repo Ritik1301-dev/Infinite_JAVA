@@ -5,11 +5,21 @@ public class ElectricityBill {
         Scanner sc = new Scanner(System.in);
         double unit = sc.nextDouble();
         double amount = 0;
-        if(0<unit && unit<=100) System.out.println(unit*4.2);
-         if(100<unit && unit<=200) System.out.println( (100*4.2) + (unit-100)*6);
-         if(200<unit && unit<=400) System.out.println( (100*4.2) + (100*6) + (unit-200)*8);
-        if( 400<unit) System.out.println( (100*4.2) + (100*6) + (200*8) + (unit-400)*13);
 
-
+        // suppose unit is 650
+        if (unit>400){  // 250  unit is used
+            amount = (unit-400)*13;
+            unit = 400;
+        }
+        if (unit>200 && unit<=400){ // 200 unit is used
+            amount += (unit-200)*8;
+            unit = 200;
+        }
+        if (unit>100 && unit<=200){  //  100 unit is used
+            amount += (unit-100)*6;
+            unit =100;
+        }
+        amount += unit*4.2;  // left all units are used
+        System.out.println(amount);
     }
 }
