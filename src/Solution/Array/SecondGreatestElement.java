@@ -8,6 +8,7 @@ public class SecondGreatestElement {
         int size = sc.nextInt();
         int[] arr = new int[size];
         for (int i=0;i<arr.length;i++){
+            System.out.println((i+1) + " element");
             arr[i] = sc.nextInt();
         }
         int greatest = Math.max(arr[0],arr[1]);
@@ -22,6 +23,6 @@ public class SecondGreatestElement {
                 secondGreatest = arr[i];
             }
         }
-        System.out.println(secondGreatest);
+        System.out.println("The second greatest number is :  " + secondGreatest);
     }
 }

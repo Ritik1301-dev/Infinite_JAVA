@@ -6,12 +6,11 @@ public class GreatestElementAndItsIndex {
         System.out.print("Enter the size of array : ");
         int size = sc.nextInt();
         int[] arr = new int[size];
-        int max = arr[0];
-        int index = 0;
-
         for (int i = 0; i < arr.length; i++){
         arr[i] = sc.nextInt();
     }
+        int max = arr[0];
+        int index = 0;
 
     for (int i=1;i<arr.length;i++){
         if(arr[i]>max){
@@ -20,7 +19,7 @@ public class GreatestElementAndItsIndex {
         }
     }
 
-        System.out.println(max + " max element found at "+ (index) + " index");
+        System.out.println(max + " Max element found at "+ (index) + " index");
 
 
 }
