@@ -18,6 +18,5 @@ public class LeftRotateByOne {
         arr[arr.length-1] = copyFirstIndex;
         System.out.println("Left Rotation of the array ");
         System.out.println(Arrays.toString(arr));
-
     }
 }

@@ -18,10 +18,7 @@ public class GreatestElementAndItsIndex {
             index = i;
         }
     }
-
         System.out.println(max + " Max element found at "+ (index) + " index");
-
-
 }
 
 }

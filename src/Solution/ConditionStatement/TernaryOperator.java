@@ -6,7 +6,7 @@ public class TernaryOperator {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int max;
-        max = a>b?  a:b ;
+        max = a>b?   a:b ;
         System.out.println(max);
         }
     }
