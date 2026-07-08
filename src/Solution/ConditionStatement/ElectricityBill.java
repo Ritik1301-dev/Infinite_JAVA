@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class ElectricityBill {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the unit : ");
         double unit = sc.nextDouble();
         double amount = 0;
 
@@ -20,6 +21,7 @@ public class ElectricityBill {
             unit =100;
         }
         amount += unit*4.2;  // left all units are used
+        System.out.print("The amount is : ");
         System.out.println(amount);
     }
 }

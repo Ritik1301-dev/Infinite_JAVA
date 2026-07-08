@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CheckNumberIsAPerfectSquare {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Number : ");
         int n = sc.nextInt();
         boolean found = false;
         for(int i=1;i*i<=n;i++){
