@@ -4,7 +4,7 @@ public class pratice {
         return a+b;
     }
     public static void main(String[] args) {
-         int sum = pratice.add(5,5);
+         int sum = pratice.add(10,55);
         System.out.println(pratice.add(5,5));
         System.out.println(sum);
     }

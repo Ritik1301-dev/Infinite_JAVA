@@ -8,7 +8,7 @@ public class ChangeInArray {
         System.out.println(Arrays.toString(temp));
     }
     public static void main(String[] args) {
-      int[] arr = {10,20,30,40,50};
+      int[] arr = {100,20,30,40,50};
       array(arr);
         System.out.println(Arrays.toString(arr));
     }
