@@ -1,4 +1,4 @@
-package Solution.Array;
+package Solution.OneDimensionalArray;
 import java.util.Scanner;
 public class MultiplicationByPreviousAndNext {
     public static void main(String[] args) {

@@ -1,5 +1,4 @@
-package Solution.Array;
-import java.lang.reflect.Array;
+package Solution.OneDimensionalArray;
 import java.util.Arrays;
 import java.util.Scanner;
 public class ReverseArrayUsingTwoPointer {

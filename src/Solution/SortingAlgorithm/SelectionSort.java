@@ -9,11 +9,11 @@ public class SelectionSort {
             if(arr[j]<arr[min]) min=j;
             }
             if (i != min) {
-                int temp = arr[i];
+                int temp = arr[i]; 
                 arr[i] = arr[min];
                 arr[min] = temp;
             }
-        }
+        }   
         System.out.println(Arrays.toString(arr));
     }
     public static void main(String[] args) {

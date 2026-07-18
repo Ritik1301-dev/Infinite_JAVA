@@ -1,6 +1,7 @@
-package Solution.Array;
+package Solution.OneDimensionalArray;
+import java.util.Arrays;
 import java.util.Scanner;
-public class SumOfAbsoluteDifference {
+public class BuildArrayFromPermutation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array : ");
@@ -10,12 +11,10 @@ public class SumOfAbsoluteDifference {
             System.out.println((i+1) + "th element");
             arr[i] = sc.nextInt();
         }
-        long sum = 0;
+        int[] ans = new int[size];
         for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                sum += Math.abs(arr[i] - arr[j]);
-            }
+            ans[i] = arr[arr[i]];
         }
-        System.out.print( "The sum of Absolute diffence is : " + sum);
+        System.out.println(Arrays.toString(ans));
     }
 }

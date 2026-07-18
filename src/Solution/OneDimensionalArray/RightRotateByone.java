@@ -1,7 +1,7 @@
-package Solution.Array;
+package Solution.OneDimensionalArray;
 import java.util.Arrays;
 import java.util.Scanner;
-public class LeftRotateByOne {
+public class RightRotateByone {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array : ");
@@ -11,12 +11,12 @@ public class LeftRotateByOne {
             System.out.println((i+1)+ "th element");
             arr[i] = sc.nextInt();
         }
-        int copyFirstIndex = arr[0];
-        for (int i=0;i<arr.length-1;i++){
-            arr[i] = arr[i+1];
+        int copyLastIndex = arr[arr.length-1];
+        for (int i=arr.length-1;i>0;i--){
+            arr[i] = arr[i-1];
         }
-        arr[arr.length-1] = copyFirstIndex;
-        System.out.println("Left Rotation of the array ");
+        arr[0] = copyLastIndex;
+        System.out.println("Right Rotation of the array  ");
         System.out.println(Arrays.toString(arr));
     }
 }

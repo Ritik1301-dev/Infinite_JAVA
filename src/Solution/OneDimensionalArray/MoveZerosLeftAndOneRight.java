@@ -1,6 +1,7 @@
-package Solution.Array;
+package Solution.OneDimensionalArray;
+import java.util.Arrays;
 import java.util.Scanner;
-public class ConcatenateArray {
+public class MoveZerosLeftAndOneRight {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array : ");
@@ -10,15 +11,17 @@ public class ConcatenateArray {
             System.out.println((i+1) + "th element");
             arr[i] = sc.nextInt();
         }
-        int[] ans = new int[2*size];
-
-        for(int i=0;i<size;i++){
-            ans[i] = arr[i];
-            ans[i+size] = arr[i];
+        int i =0;
+        int j =0;
+        while (i< arr.length) {
+            if (arr[i]==0) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                j++;
+            }
+            i++;
         }
-        System.out.print("Concatenate Array : ");
-        for(int i=0;i<2*size;i++){
-            System.out.print(ans[i] + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }
