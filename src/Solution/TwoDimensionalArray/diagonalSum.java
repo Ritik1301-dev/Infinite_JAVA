@@ -25,7 +25,7 @@ public class diagonalSum {
             }
         }
         int Sum = diagonalSum.diagonalSum(arr);
-        System.out.print("The Sum of the diagonal is : ");
+        System.out.print("The total sum of diagonal is ");
         System.out.println(Sum);
     }
 }
