@@ -1,25 +1,25 @@
 package Solution.OOPs;
 public class Student {
-    int age;
     String name;
-    long contactNo;
+    String branch;
+    double cgpa;
 
     @Override
     public String toString() {
         return "Student{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", contactNo=" + contactNo +
+                "name='" + name + '\'' +
+                ", branch='" + branch + '\'' +
+                ", cgpa=" + cgpa +
                 '}';
     }
-    Student(int a, String n , long c ){
-        age = a;
-        name = n;
-        contactNo = c;
 
+    Student(String a, String b , double c ){
+       this.name = a;
+       this.branch = b;
+       this.cgpa = c;
     }
     public static void main(String[] args) {
-        Student ravi = new Student(21,"Ravi Gupta",98765432);
-        System.out.println(ravi);
+        Student putin  = new Student("Putin","Russia",9.99);
+        System.out.println(putin);
     }
 }
