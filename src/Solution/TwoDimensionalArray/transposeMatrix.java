@@ -19,9 +19,10 @@ public class transposeMatrix {
         int m = sc.nextInt();
 
         int[][] arr = new int[n][m];
-        System.out.println("Enter elements of array");
+
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
+                System.out.println("Enter element at row " + i+ " and column "+j +": ");
                 arr[i][j] = sc.nextInt();
             }
         }

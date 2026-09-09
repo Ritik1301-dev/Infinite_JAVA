@@ -41,10 +41,11 @@ public class rotateImage {
 
         int[][] arr = new int[n][m];
 
-        System.out.println("Enter elements:");
+
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
+                System.out.println("Enter element at row " + i+ " and column "+j +": ");
                 arr[i][j] = sc.nextInt();
             }
         }
