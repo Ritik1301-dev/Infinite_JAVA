@@ -1,25 +1,40 @@
 package Solution.OOPs;
+
+// Encapsulation
 public class Student {
-    String name;
-    String branch;
-    double cgpa;
+     private String name;
+     private int rollNumber;
+      private  double cgpa;
+     private  String collage;
 
     @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", branch='" + branch + '\'' +
+                ", rollNumber=" + rollNumber +
                 ", cgpa=" + cgpa +
+                ", collage='" + collage + '\'' +
                 '}';
     }
 
-    Student(String a, String b , double c ){
-       this.name = a;
-       this.branch = b;
-       this.cgpa = c;
+
+    Student(String name, int rollNumber, double cgpa, String collage){
+       this.name = name;
+       this.rollNumber= rollNumber;
+       this.cgpa= cgpa;
+       this.collage = collage;
     }
+     // getters and setters
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        // we also add validations.
+        this.name = name;
+    }
+
     public static void main(String[] args) {
-        Student putin  = new Student("Putin","Russia",9.99);
-        System.out.println(putin);
+        Student ravi   = new Student("Ravi Sharma", 100 , 9.9 ,"MIT");
+        System.out.println(ravi);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BankAccount {
     String name;
     long accNo;
-    double balance;
+     private  double balance;
     double interest;
     BankAccount(){
         this.name = "";
@@ -13,6 +13,7 @@ public class BankAccount {
         this.balance = 0.0;
         this.interest = 0.0;
     }
+
     void accept(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Name of User ");
@@ -22,7 +23,7 @@ public class BankAccount {
         System.out.println("Enter the balance ");
         balance = sc.nextDouble();
     }
-    void calculate(){
+     void calculate(){
         if( balance<=10000) this.interest = balance * 5 / 100;
         else interest = balance * 7 / 100;
     }
