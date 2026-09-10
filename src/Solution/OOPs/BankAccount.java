@@ -2,7 +2,7 @@ package Solution.OOPs;
 
 import java.util.Scanner;
 
-public class BankAccount {
+public   class BankAccount {
     String name;
     long accNo;
      private  double balance;
