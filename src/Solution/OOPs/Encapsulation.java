@@ -23,6 +23,7 @@ public class Encapsulation {
                 this.rollNumber = rollNumber;
                 this.cgpa = cgpa;
                 this.collage = collage;
+
             }
 
             // getters and setters
