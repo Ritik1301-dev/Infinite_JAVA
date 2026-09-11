@@ -1,6 +1,6 @@
 package Solution.OOPs;
 
-interface Bikes {
+interface Bike {
 
     void start();
     void accelerate();
@@ -8,7 +8,7 @@ interface Bikes {
 
     public static void main(String[] args) {
 
-        Bikes bike = new FuelBikes();
+        Bike bike = new FuelBike();
 
         bike.start();
         bike.accelerate();
@@ -17,39 +17,39 @@ interface Bikes {
 }
 
 
-class FuelBikes implements Bikes {
+class FuelBike implements Bike {
 
     @Override
     public void start() {
-        System.out.println("Fuel Bikes is starting");
+        System.out.println("Fuel Bike is starting");
     }
 
     @Override
     public void accelerate() {
-        System.out.println("Fuel Bikes is accelerating");
+        System.out.println("Fuel Bike is accelerating");
     }
 
     @Override
     public void brake() {
-        System.out.println("Fuel Bikes is braking");
+        System.out.println("Fuel Bike is braking");
     }
 }
 
 
-class ElectricBikes implements Bikes {
+class ElectricBike implements Bike {
 
     @Override
     public void start() {
-        System.out.println("Electric Bikes is starting");
+        System.out.println("Electric Bike is starting");
     }
 
     @Override
     public void accelerate() {
-        System.out.println("Electric Bikes is accelerating");
+        System.out.println("Electric Bike is accelerating");
     }
 
     @Override
     public void brake() {
-        System.out.println("Electric Bikes is braking");
+        System.out.println("Electric Bike is braking");
     }
 }
