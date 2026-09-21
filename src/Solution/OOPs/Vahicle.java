@@ -23,6 +23,6 @@ public class Vahicle {
     }
     public static void main(String[] args) {
     Vahicle v = new Vahicle("BMW" , 11307 , 20.5);
-        System.out.println(v );
+        System.out.println(v);
     }
 }
