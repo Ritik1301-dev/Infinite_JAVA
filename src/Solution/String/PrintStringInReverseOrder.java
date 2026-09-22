@@ -7,8 +7,10 @@ public class PrintStringInReverseOrder {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Word : ");
         String s = sc.nextLine();
+        String rev = "";
         for (int i=s.length()-1;i>=0;i--){
-            System.out.println(s.charAt(i));
+            rev += s.charAt(i);
         }
+        System.out.println(rev);
     }
 }
