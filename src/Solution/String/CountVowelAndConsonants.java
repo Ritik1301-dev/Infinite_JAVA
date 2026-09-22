@@ -18,5 +18,6 @@ public class CountVowelAndConsonants {
      }
         System.out.println("Vowel : " + v);
         System.out.println("Consonant : " + c);
+        System.out.println("Spaces : "+ s);
     }
 }
