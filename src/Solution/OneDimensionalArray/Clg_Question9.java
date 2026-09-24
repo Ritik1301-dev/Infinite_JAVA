@@ -1,5 +1,5 @@
 package Solution.OneDimensionalArray;
-
+ // Create a new array for even or odd number
 import java.util.Arrays;
 import java.util.Scanner;
 
