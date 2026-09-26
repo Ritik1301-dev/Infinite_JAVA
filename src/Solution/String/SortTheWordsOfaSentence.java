@@ -18,6 +18,10 @@ public class SortTheWordsOfaSentence {
                 }
             }
         }
-        System.out.println(Arrays.toString(arr));
+        String ans = "";
+        for (int i=0;i<arr.length;i++){
+            ans += arr[i] + " ";
+        }
+        System.out.println(ans);
     }
 }
