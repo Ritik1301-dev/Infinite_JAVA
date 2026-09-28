@@ -10,6 +10,5 @@ public class Clg_Question13 {
                 break;
             }
         }
-
     }
 }
