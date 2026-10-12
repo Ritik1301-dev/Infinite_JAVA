@@ -1,4 +1,4 @@
-package Solution.OneDimensionalArray;
+package Solution.Clq_Questions;
 
 public class Clg_Question8 {
     public static void main(String[] args) {

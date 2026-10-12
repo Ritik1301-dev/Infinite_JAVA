@@ -18,7 +18,7 @@ public class CapatalizeFirstAndLastWord {
                     Character.toUpperCase(Word.charAt(Word.length()-1)) + " ";
         }
 
-    }
+       }
         System.out.print(ans);
         }
 }

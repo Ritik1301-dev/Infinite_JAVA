@@ -1,4 +1,4 @@
-package Solution.OneDimensionalArray;
+package Solution.Clq_Questions;
 
 import java.util.Arrays;
 import java.util.Scanner;

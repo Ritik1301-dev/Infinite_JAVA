@@ -1,4 +1,4 @@
-package Solution.OneDimensionalArray;
+package Solution.Clq_Questions;
 import java.util.Scanner;
 public class Clg_Question1 {
     public static void main(String[] args) {

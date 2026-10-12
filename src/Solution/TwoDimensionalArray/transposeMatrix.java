@@ -1,6 +1,6 @@
 package Solution.TwoDimensionalArray;
 import java.util.Scanner;
-public class transposeMatrix {
+public class  transposeMatrix {
     static int [][] transpose(int [][] arr) {
         int mat[][] = new int[arr[0].length][arr.length];
         for (int i = 0; i < arr.length; i++) {
