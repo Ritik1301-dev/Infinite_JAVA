@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GCDofArray {
     static int GCD( int a , int b){
         if(b==0) return a;
-        return GCD(b , b%a);
+        return GCD(b , a%b);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
