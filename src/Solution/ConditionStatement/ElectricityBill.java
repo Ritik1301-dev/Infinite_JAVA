@@ -11,10 +11,10 @@ public class ElectricityBill {
         if (unit>400){  // 250  unit is used
             amount = (unit-400)*13;
             unit = 400;
-        }
+
         if (unit>200 && unit<=400){ // 200 unit is used
             amount += (unit-200)*8;
-            unit = 200;
+            }     unit = 200;
         }
         if (unit>100 && unit<=200){  //  100 unit is used
             amount += (unit-100)*6;
