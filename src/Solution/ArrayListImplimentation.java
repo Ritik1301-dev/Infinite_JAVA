@@ -55,7 +55,7 @@ public class ArrayListImplimentation {
       else arr[index] = ele;
     }
     void grow(){
-        int newCapacity = capacity + (capacity/2);
+        int newCapacity = capacity   + (capacity/2);
         int temp [] = new int[newCapacity];
         for (int i=0;i<arr.length;i++){
             temp[i] = arr[i];
