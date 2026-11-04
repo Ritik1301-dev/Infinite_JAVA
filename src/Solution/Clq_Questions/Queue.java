@@ -52,7 +52,7 @@ public class Queue {
         }
     }  */
 
-    public static void main(String[] args) {
+      /*   public static void main(String[] args) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
         for (int i=0;i<3;i++){
@@ -60,5 +60,25 @@ public class Queue {
             pq.add(1);
         }
         System.out.println(pq);
+    }   */
+
+    public static void main(String[] args) {
+        int arr[] = {7, 10, 4, 3, 20, 50};
+        int k = 3;
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        // Insert all elements into PriorityQueue
+        for (int i = 0; i < arr.length; i++) {
+            pq.add(arr[i]);
+        }
+
+        // Remove k-1 smallest elements
+        for (int i = 1; i < k; i++) {
+            pq.poll();
+        }
+
+        // Kth smallest element
+        System.out.println(k + "rd smallest element: " + pq.peek());
+         }
     }
-}
