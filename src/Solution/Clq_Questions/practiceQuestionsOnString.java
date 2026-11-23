@@ -13,7 +13,7 @@ public class practiceQuestionsOnString {
 //    }
 
 
-      //  check palindrome
+    //  check palindrome
 
 //    static  boolean isPalindrome(String s){
 //        int i=0 ;
@@ -33,9 +33,7 @@ public class practiceQuestionsOnString {
 //    }
 
 
-
-
-        //   count vowel and consonants
+    //   count vowel and consonants
 
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -59,7 +57,7 @@ public class practiceQuestionsOnString {
 //    }
 
 
-     //  Toggle characters
+    //  Toggle characters
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter the String : ");
@@ -114,13 +112,54 @@ public class practiceQuestionsOnString {
 
     // Maximum number of words in a sentence
 
+//    public static void main(String[] args) {
+//        String arr[] = {"Hello World", "a b c d"};
+//        int max = 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            String words[] = arr[i].split(" ");
+//            max = Math.max(max, words.length);
+//        }
+//        System.out.println(max);
+//    }
+
+    //  Frequency of each character
+
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String str = sc.nextLine();
+//
+//        int freq[] = new int[128];
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            char ch = str.charAt(i);
+//
+//            freq[ch] = freq[ch] + 1;
+//        }
+//        for (int i = 0; i < freq.length; i++) {
+//            if (freq[i] > 0) {
+//                System.out.println((char) i+ "-> " + freq[i]);
+//            }
+//        }
+//    }
+
+    //  Frequency of each character(Optimal Approach )   ( Constraints = All character in small letter )
+
     public static void main(String[] args) {
-        String arr[] = {"Hello World", "a b c d"};
-        int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            String words[] = arr[i].split(" ");
-            max = Math.max(max, words.length);
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int freq[] = new int[28];
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            freq[ch-97] = freq[ch-97] + 1;
         }
-        System.out.println(max);
+       for (int i=0;i<freq.length;i++){
+           if (freq[i] > 0){
+               System.out.println((char) (i+97) + "-> "+ freq[i]);
+           }
+       }
     }
 }
+
