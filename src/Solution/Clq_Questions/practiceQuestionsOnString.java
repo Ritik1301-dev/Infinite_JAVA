@@ -195,25 +195,44 @@ public class practiceQuestionsOnString {
        //   Sort the words of a sentence  (According to Lexicographical Order)
 
 
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-         String s = sc.nextLine();
-         String [] arr = s.split(" ");
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String s = sc.nextLine();
+//         String [] arr = s.split(" ");
+//
+//         for (int i=0;i< arr.length-1;i++){
+//             for (int j=0;j<arr.length-i-1;j++){
+//                  if (arr[j].compareTo(arr[j+1])>0){
+//                      String temp = arr[j];
+//                      arr[j] = arr[j+1];
+//                      arr[j+1] = temp;
+//                  }
+//             }
+//         }
+//         String ans = "";
+//         for (int i=0;i<arr.length;i++){
+//             ans += arr[i] + " ";
+//         }
+//         System.out.println(ans);
+//       }
 
-         for (int i=0;i< arr.length-1;i++){
-             for (int j=0;j<arr.length-i-1;j++){
-                  if (arr[j].compareTo(arr[j+1])>0){
-                      String temp = arr[j];
-                      arr[j] = arr[j+1];
-                      arr[j+1] = temp;
-                  }
-             }
-         }
-         String ans = "";
-         for (int i=0;i<arr.length;i++){
-             ans += arr[i] + " ";
-         }
-         System.out.println(ans);
-       }
+      // Rotate String
+
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     String s = sc.nextLine();
+     String goal = sc.nextLine();
+
+     if (s.length() != goal.length()) {
+         System.out.println("Not Rotate String");
+         return;
+     }
+     String temp = s+s;
+        if(temp.contains(goal)){
+            System.out.println("Rotate String ");
+        }else {
+            System.out.println("Not Rotate String");
+        }
+    }
 }
 
