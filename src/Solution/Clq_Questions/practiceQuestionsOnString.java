@@ -1,4 +1,5 @@
 package Solution.Clq_Questions;
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.*;
 public class practiceQuestionsOnString {
 //    public static void main(String[] args) {
@@ -144,22 +145,75 @@ public class practiceQuestionsOnString {
 
     //  Frequency of each character(Optimal Approach )   ( Constraints = All character in small letter )
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String str = sc.nextLine();
+//
+//        int freq[] = new int[28];
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            char ch = str.charAt(i);
+//
+//            freq[ch-97] = freq[ch-97] + 1;
+//        }
+//       for (int i=0;i<freq.length;i++){
+//           if (freq[i] > 0){
+//               System.out.println((char) (i+97) + "-> "+ freq[i]);
+//           }
+//       }
+//    }
 
-        int freq[] = new int[28];
 
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+    //   Check anagram
 
-            freq[ch-97] = freq[ch-97] + 1;
-        }
-       for (int i=0;i<freq.length;i++){
-           if (freq[i] > 0){
-               System.out.println((char) (i+97) + "-> "+ freq[i]);
-           }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String str1 = sc.nextLine();
+//        String  str2   =  sc.nextLine();
+//
+//        if (str1.length() != str2.length()){
+//            System.out.println("Not Anagram");
+//        }
+//        int [] arr = new int[26];
+//
+//        for (int i=0;i<str1.length();i++){
+//                arr[str1.charAt(i) - 'a' ]++;
+//        }
+//         for (int i=0;i<str2.length();i++){
+//             arr[str2.charAt(i) - 'a']--;
+//         }
+//
+//         for (int i=0;i<arr.length;i++){
+//             if (arr[i] != 0){
+//                 System.out.println("Not Anagram");
+//             }
+//         }
+//        System.out.println("String is Anagram");
+//
+//    }
+
+       //   Sort the words of a sentence  (According to Lexicographical Order)
+
+
+     public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         String s = sc.nextLine();
+         String [] arr = s.split(" ");
+
+         for (int i=0;i< arr.length-1;i++){
+             for (int j=0;j<arr.length-i-1;j++){
+                  if (arr[j].compareTo(arr[j+1])>0){
+                      String temp = arr[j];
+                      arr[j] = arr[j+1];
+                      arr[j+1] = temp;
+                  }
+             }
+         }
+         String ans = "";
+         for (int i=0;i<arr.length;i++){
+             ans += arr[i] + " ";
+         }
+         System.out.println(ans);
        }
-    }
 }
 
