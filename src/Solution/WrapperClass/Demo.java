@@ -7,7 +7,7 @@ public class Demo {
         Integer b = a;
         System.out.println(b);
 
-        // unboxing ( object to primitive )
+                // unboxing ( object to primitive )
         int c = b;
         System.out.println(c);
     }

@@ -218,21 +218,23 @@ public class practiceQuestionsOnString {
 
       // Rotate String
 
-    public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
-     String s = sc.nextLine();
-     String goal = sc.nextLine();
+//    public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in);
+//     String s = sc.nextLine();
+//     String goal = sc.nextLine();
+//
+//     if (s.length() != goal.length()) {
+//         System.out.println("Not Rotate String");
+//         return;
+//     }
+//     String temp = s+s;
+//        if(temp.contains(goal)){
+//            System.out.println("Rotate String ");
+//        }else {
+//            System.out.println("Not Rotate String");
+//        }
+//    }
 
-     if (s.length() != goal.length()) {
-         System.out.println("Not Rotate String");
-         return;
-     }
-     String temp = s+s;
-        if(temp.contains(goal)){
-            System.out.println("Rotate String ");
-        }else {
-            System.out.println("Not Rotate String");
-        }
-    }
+    //
 }
 
